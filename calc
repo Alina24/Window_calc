@@ -4,6 +4,8 @@
 </head>
 <body bgcolor="#95BFFF" text="#000000" link="#888888" vlink="#888888" alink="#888888" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
 
+<form name=SForm action="1.php">
+
 <script language="javascript">
 function getValue(SomeSelect) {
   SomeSel_Obj = document.forms["SForm"].elements[SomeSelect].options;
@@ -156,6 +158,15 @@ function calculate()
                   <center>
                     <p> 
                       <input type="button" value="Подсчитать" onClick="calculate()" name="CaclButton">
+                    </p>
+                  </center>
+                </td>
+              </tr>
+              <tr> 
+                <td colspan="2"> 
+                  <center>
+                    <p> 
+                      <input type="button" value="Заказать" onClick="zakaz()" name="ZakazButton">
                     </p>
                   </center>
                 </td>
