@@ -77,7 +77,7 @@ function calculate()
       <center>
         <center>
          
-          <form name="SForm">
+          <form name=SForm action="1.php">
             &nbsp;<font color="#FF0000">&nbsp;&nbsp;<span lang="ru"><b>Оконный 
   		калькулятор </b></span></font><b><font color="#FF0000">:</font></b><br>
             <br>
