@@ -4,8 +4,6 @@
 </head>
 <body bgcolor="#95BFFF" text="#000000" link="#888888" vlink="#888888" alink="#888888" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
 
-<form name=SForm action="1.php">
-
 <script language="javascript">
 function getValue(SomeSelect) {
   SomeSel_Obj = document.forms["SForm"].elements[SomeSelect].options;
@@ -69,36 +67,33 @@ function calculate()
 }
 </script>
 
-
-
 <table width="77%" border="0" cellspacing="0" cellpadding="0">
   <tr> 
     <td width="769" valign="top"> 
       <center>
         <center>
          
-          <form name=SForm action="1.php">
-            &nbsp;<font color="#FF0000">&nbsp;&nbsp;<span lang="ru"><b>Оконный 
-  		калькулятор </b></span></font><b><font color="#FF0000">:</font></b><br>
-            <br>
-            <table border=0 cellspacing=0 cellpadding=5 width=500>
-              <tr> 
-                <td width="250" valign="top"><b>Высота окна[A]:</b></td>
-                <td width="250"> 
-                  <input type="text" name="val_a" size="10">
-                  &nbsp;мм<br>
-                </td>
-              </tr>
-              <tr> 
-                <td width="250" valign="top"><b>Ширина левой створки[B]: </b></td>
-                <td width="250"> 
-                  <input type="text" name="val_b" size="10">
-                  &nbsp;мм<br>
-                </td>
-              </tr>
-              <tr> 
-                <td colspan="2" width="250" valign="top"> 
-                  <input type="checkbox" name="MosquitoL" value="True">
+<form name=SForm action="1.php">
+  &nbsp;<font color="#FF0000">&nbsp;&nbsp;<span lang="ru"><b>Оконный калькулятор </b></span></font><b><font color="#FF0000">:</font></b><br>
+<br>
+<table border=0 cellspacing=0 cellpadding=5 width=500>
+<tr> 
+<td width="250" valign="top"><b>Высота окна[A]:</b></td>
+ <td width="250"> 
+<input type="text" name="val_a" size="10">
+&nbsp;мм<br>
+ </td>
+   </tr>
+<tr> 
+<td width="250" valign="top"><b>Ширина левой створки[B]: </b></td>
+<td width="250"> 
+<input type="text" name="val_b" size="10">
+&nbsp;мм<br>
+ </td>
+</tr>
+<tr> 
+<td colspan="2" width="250" valign="top"> 
+ <input type="checkbox" name="MosquitoL" value="True">
                   <b>Москитная сетка</b></td>
               </tr>
               <tr> 
@@ -110,31 +105,31 @@ function calculate()
               </tr>
               <tr> 
                 <td colspan="2" width="250" valign="top"> 
-                  <input type="checkbox" name="MosquitoR" value="True">
-                  <b>Москитная сетка</b></td>
-              </tr>
-              <tr> 
-                <td width="250" valign="middle"><b>Материал: </b></td>
-                <td width="250"> 
-                  <select name="WMaterial">
-                    <option value="1">1 - Сосна</option>
-                    <option value="2">2 - Орех</option>
-                    <option value="3">3 - Бук</option>
-                    <option value="4">4 - Лиственница срощенная</option>
-                    <option value="5">5 - Лиственница</option>
-                    <option value="6">6 - Граб</option>
-                    <option value="7">7 - Дуб срощенный</option>
-                    <option value="8">8 - Дуб</option>
+<input type="checkbox" name="MosquitoR" value="True">
+<b>Москитная сетка</b></td>
+ </tr>
+<tr> 
+ <td width="250" valign="middle"><b>Материал: </b></td>
+<td width="250"> 
+<select name="WMaterial">
+<option value="1">1 - Сосна</option>
+<option value="2">2 - Орех</option>
+<option value="3">3 - Бук</option>
+<option value="4">4 - Лиственница срощенная</option>
+<option value="5">5 - Лиственница</option>
+<option value="6">6 - Граб</option>
+ <option value="7">7 - Дуб срощенный</option>
+<option value="8">8 - Дуб</option>
                   </select>
                 </td>
               </tr>
               <tr> 
                 <td width="250" valign="middle"><b>Цвет: </b></td>
-                <td width="250"> 
-                  <select name="WColor">
-                    <option value="1">1 - Белый или под дерево *</option>
-                    <option value="2">2 - Двухцветное окрашивание</option>
-                                      </select>
+<td width="250"> 
+<select name="WColor">
+ <option value="1">1 - Белый или под дерево *</option>
+<option value="2">2 - Двухцветное окрашивание</option>
+</select>
                 </td>
               </tr>
               <tr> 
@@ -146,7 +141,7 @@ function calculate()
 
                     <tr> 
                       <td width="24"> 
-                        <input type="checkbox" name="Mounting" value="True">
+<input type="checkbox" name="Mounting" value="True">
                       </td>
                       <td width="336"><b>Монтаж окна</b></td>
                     </tr>
@@ -157,7 +152,7 @@ function calculate()
                 <td colspan="2"> 
                   <center>
                     <p> 
-                      <input type="button" value="Подсчитать" onClick="calculate()" name="CaclButton">
+<input type="button" value="Подсчитать" onClick="calculate()" name="CaclButton">
                     </p>
                   </center>
                 </td>
@@ -190,11 +185,9 @@ function calculate()
       </td>
   </tr>
 </table>
-
     </td>
   </tr>
 </table>
-
 </body>
 </html>
 
