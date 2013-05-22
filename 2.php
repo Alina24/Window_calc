@@ -5,7 +5,7 @@
 <table border=2>
 <tr> <td>Val_a</td> <td>Val_b</td> <td>Val_c</td> <td>WTypeSum</td> </tr>
 <?php
-$fp=fopen("zam.txt","r");
+$fp=fopen("res.txt","r");
 if ($fp)
 
    {
