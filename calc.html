@@ -22,7 +22,7 @@ function calculate()
   if(document.forms["SForm"].elements["MosquitoL"].checked) MosquitoL = true; else MosquitoL = false;
   if(document.forms["SForm"].elements["MosquitoR"].checked) MosquitoR = true; else MosquitoR = false;
   if(document.forms["SForm"].elements["Mounting"].checked) Mounting = true; else Mounting = false;
-  // Predefined values (prices)
+
   var WndWoodM2_Coof = 0.11;
   var WndWoodM3_Coof = 0.15;
   var WndWoodM4_Coof = 0.15;
@@ -34,12 +34,12 @@ function calculate()
   var WndColorC3_CPS = 15;
   var Mosquete_CPS = 35;
   var Mounting_CPS = 40;
-  // Square results
+ 
   LSquare = (Val_a * Val_b)/1000000;
   RSquare = (Val_a * Val_c)/1000000;
   ActualSquare = LSquare + RSquare;
   WTypeSum = 0; AddSum = 0; AddCooficient = 1;
-  // Window Material
+ 
   if(WMaterial==2) AddCooficient = AddCooficient + WndWoodM2_Coof;
   if(WMaterial==3) AddCooficient = AddCooficient + WndWoodM3_Coof;
   if(WMaterial==4) AddCooficient = AddCooficient + WndWoodM4_Coof;
@@ -47,20 +47,16 @@ function calculate()
   if(WMaterial==6) AddCooficient = AddCooficient + WndWoodM6_Coof;
   if(WMaterial==7) AddCooficient = AddCooficient + WndWoodM7_Coof;
   if(WMaterial==8) AddCooficient = AddCooficient + WndWoodM8_Coof;
-  // Window Color
+
   if(WColor==2) AddSum = AddSum + (ActualSquare * WndColorC2_CPS);
   
-  // Mosquito web
   ML_Square = LSquare; if(ML_Square < 1) ML_Square = 1;
   MR_Square = RSquare; if(MR_Square < 1) MR_Square = 1;
   if(MosquitoL==true) AddSum = AddSum + (ML_Square * Mosquete_CPS) + 5;
   if(MosquitoR==true) AddSum = AddSum + (MR_Square * Mosquete_CPS) + 5;
 
-  // Mounting
   if(Mounting==true) AddSum = AddSum + (ActualSquare * Mounting_CPS);
-//  alert('LSquare=' + LSquare + '; CSquare=' + CSquare + '; RSquare=' + RSquare);
-//  alert('AddSum=' + AddSum + '; Coof=' + AddCooficient);
-  // Cooficents
+
   WTypeSum = WTypeSum * AddCooficient;
    csum.innerText=Math.round(WTypeSum + AddSum)+1;
    csss.innerText=(Math.round((ActualSquare)*100))/100;
@@ -138,7 +134,6 @@ function calculate()
               <tr> 
                 <td valign="middle" colspan="2"> 
                   <table width="360" border="0" cellspacing="0" cellpadding="0">
-
                     <tr> 
                       <td width="24"> 
 <input type="checkbox" name="Mounting" value="True">
@@ -153,15 +148,15 @@ function calculate()
                   <center>
                     <p> 
 <input type="button" value="Подсчитать" onClick="calculate()" name="CaclButton">
-                    </p>
-                  </center>
-                </td>
-              </tr>
-              <tr> 
-                <td colspan="2"> 
-                  <center>
-                    <p> 
-                      <input type="button" value="Заказать" onClick="zakaz()" name="ZakazButton">
+ </p>
+</center>
+</td>
+ </tr>
+ <tr> 
+<td colspan="2"> 
+<center>
+<p> 
+ <input type="button" value="Заказать" onClick="zakaz()" name="ZakazButton">
                     </p>
                   </center>
                 </td>
